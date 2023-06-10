@@ -8,8 +8,6 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-//system da venna
-
 mongoose.connect('mongodb://127.0.0.1:27017/info',{useNewUrlParser:true,useUnifiedTopology:true})
 .then(()=>console.log('db connected'))
 .catch((err) => console.error(err));
